@@ -1,20 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerDead : MonoBehaviour
 {
+    public GameObject deathEffect;
 
-    public Transform respawnPoint;
-    public Transform player;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (collision.name == "Player") Respawn();
+        if(other.gameObject.name == "Enemy")
+        {
+
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+
+            SceneManager.LoadScene(0);
+        }
     }
 
-    void Respawn()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        player.transform.position = respawnPoint.transform.position;
+        if (other.gameObject.name == "DeadZone")
+        {
+            SceneManager.LoadScene(0);
+        }
     }
 }
