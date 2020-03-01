@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Enemy
   - DeadZone
+  - HUD
+  - GM
+  - Point
   layers:
   - Default
   - TransparentFX
