@@ -121,24 +121,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &31684018 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2161962409288211794, guid: 80a123710987d8745bb74482a2c0a8a1,
-    type: 3}
-  m_PrefabInstance: {fileID: 4982076830927223413}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c264d2662b271b3488e7a3552fdd78a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!23 &31684024 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 4982076830159513208, guid: 80a123710987d8745bb74482a2c0a8a1,
-    type: 3}
-  m_PrefabInstance: {fileID: 4982076830927223413}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &111010742
 GameObject:
   m_ObjectHideFlags: 0
@@ -194,7 +176,7 @@ Camera:
   far clip plane: 100
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -496,7 +478,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1128296228}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 7
     NearClipPlane: 0.3
     FarClipPlane: 100
     Dutch: 0
@@ -740,12 +722,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1586178145 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 4982076829735364414, guid: 80a123710987d8745bb74482a2c0a8a1,
-    type: 3}
-  m_PrefabInstance: {fileID: 4982076830927223413}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1810682978
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,26 +999,6 @@ PrefabInstance:
       propertyPath: hud
       value: 
       objectReference: {fileID: 872841956}
-    - target: {fileID: 2161962409288211794, guid: 80a123710987d8745bb74482a2c0a8a1,
-        type: 3}
-      propertyPath: renderer
-      value: 
-      objectReference: {fileID: 31684024}
-    - target: {fileID: 3449350046459886767, guid: 80a123710987d8745bb74482a2c0a8a1,
-        type: 3}
-      propertyPath: renderer
-      value: 
-      objectReference: {fileID: 1586178145}
-    - target: {fileID: 3449350046459886767, guid: 80a123710987d8745bb74482a2c0a8a1,
-        type: 3}
-      propertyPath: playerDead
-      value: 
-      objectReference: {fileID: 31684018}
-    - target: {fileID: 4982076830159513208, guid: 80a123710987d8745bb74482a2c0a8a1,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4982076830159513210, guid: 80a123710987d8745bb74482a2c0a8a1,
         type: 3}
       propertyPath: m_LocalPosition.x

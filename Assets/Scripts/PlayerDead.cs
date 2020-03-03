@@ -62,7 +62,7 @@ public class PlayerDead : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.name == "Enemy")
+        if(other.gameObject.tag == "Enemy")
         {
             Dead();
         }
@@ -70,7 +70,7 @@ public class PlayerDead : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "DeadZone")
+        if (other.gameObject.tag == "DeadZone")
         {
             Dead();
         }
